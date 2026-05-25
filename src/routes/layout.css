@@ -1,2 +1,9 @@
-@import 'tailwindcss';
-@plugin '@tailwindcss/typography';
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import "@fontsource/atkinson-hyperlegible";
+@import "@fontsource/jetbrains-mono";
+
+@theme {
+	--font-sans: "Atkinson Hyperlegible", sans-serif;
+	--font-mono: "JetBrains Mono", monospace;
+}

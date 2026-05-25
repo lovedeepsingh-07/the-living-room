@@ -1,4 +1,3 @@
-import { mdsvex } from "mdsvex";
 import adapter_auto from "@sveltejs/adapter-auto";
 import adapter_cloudflare from "@sveltejs/adapter-cloudflare";
 
@@ -21,9 +20,7 @@ const config = {
 			"$components/*": "./src/components/*",
 			$components: "./src/components/index.ts"
 		}
-	},
-	preprocess: [mdsvex({ extensions: [".svx", ".md"] })],
-	extensions: [".svelte", ".svx", ".md"]
+	}
 };
 
 export default config;
